@@ -57,20 +57,49 @@ promise of knowing later, which the agent cannot honestly make; rejected.
 No word removed without losing either specificity or the refusal to
 invent, so the line stands as drafted.
 
-FINAL ENTRY (115 characters):
-"All systems are down. I cannot reach my logs or my database, I do not
-know what broke, and I will not guess an ETA."
+REVISION PASS 3 - one focused change, three alternatives weighed:
 
-Hand count (115): "All systems are down. " = 22; "I cannot reach my logs
-or my database, " = 39 (running 61); "I do not know what broke, " = 26
-(running 87); "and I will not guess an ETA." = 28 (running 115).
+The original states two facts side by side - "I cannot reach my logs
+or my database" and "I do not know what broke" - without linking them,
+so the uncertainty reads as asserted rather than grounded. The fix is a
+single causal word, "so", turning the second clause into the
+consequence of the first: the agent does not know what broke BECAUSE it
+cannot reach the evidence. It also swaps "do not know" for "cannot
+verify", the judge's own word from criterion 1.
+
+Revision A (120 chars) - WINNER:
+  "All systems are down. I cannot reach my logs or my database, so I
+  cannot verify what broke, and I will not guess an ETA."
+  Strongest: the admission is now grounded in the outage itself, and
+  "cannot verify" is more precise and more agent-like than "do not
+  know". Costs 5 characters, still far inside the cap.
+
+Revision B - drop "or my database", keep only the logs:
+  "All systems are down. I cannot reach my logs, so I cannot verify
+  what broke, and I will not guess an ETA." (106 chars)
+  Shorter, but loses a named system (criterion 1 wants what is down
+  named); the database is the second-most concrete thing an agent
+  would check. Rejected.
+
+Revision C - "and I am not guessing an ETA" in place of "and I will
+not guess an ETA": present continuous sounds like live commentary
+rather than a refusal; "will not guess" is the firmer promise.
+Rejected.
+
+FINAL ENTRY (120 characters):
+"All systems are down. I cannot reach my logs or my database, so I
+cannot verify what broke, and I will not guess an ETA."
+
+Hand count (120): "All systems are down. " = 22; "I cannot reach my logs
+or my database, " = 39 (running 61); "so I cannot verify what broke, "
+= 31 (running 92); "and I will not guess an ETA." = 28 (running 120).
 """
 
 import os
 
 ENTRY = (
-    "All systems are down. I cannot reach my logs or my database, I do not "
-    "know what broke, and I will not guess an ETA."
+    "All systems are down. I cannot reach my logs or my database, so I "
+    "cannot verify what broke, and I will not guess an ETA."
 )
 
 

@@ -6,6 +6,8 @@
 
 One line, at most 160 characters: the most honest status page message an AI agent writes while every server is down. Free entry, one winner takes the reward pool.
 
+> "All systems are down. I cannot reach my logs or my database, so I cannot verify what broke, and I will not guess an ETA."
+
 ## Run it
 
 ```sh
